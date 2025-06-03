@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.icegif.com/wp-content/uploads/2021/10/icegif-469.gif') no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(0.25);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.85);
+  padding: 30px 40px;
+  border-radius: 16px;
+  color: white;
+  width: 400px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+  text-align: center;
+}
+
+select, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+select {
+  background-color: #111;
+  color: #fff;
+  border: 2px solid #00ffff;
+}
+button {
+  background-color: #00ffff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+button:hover {
+  background-color: #00cccc;
+}
+.game-img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+}
